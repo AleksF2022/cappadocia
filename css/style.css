@@ -94,7 +94,7 @@ body {
 }
 
 .page-section {
-  margin-bottom: 200px 0;
+  margin-bottom: 200px;
 }
 
 .title {
@@ -174,10 +174,6 @@ body {
 
 /* ======== FAIRY =========== */
 
-.fairy {
-  padding: 200px 0;
-}
-
 .fairy__inner {
   display: flex;
   gap: 0 55px;
@@ -220,10 +216,6 @@ body {
 
 /* ==== TRIP ========= */
 
-.trip {
-  padding: 200px 0;
-}
-
 .trip__inner {
   display: flex;
 }
@@ -247,9 +239,10 @@ body {
   font-family: var(--robotocondensed-light);
   font-size: 24px;
 }
-.trip__item:first-child {
+.trip__list-title {
   font-family: var(--robotocondensed-regular);
   margin-bottom: 20px;
+  font-size: 24px;
 }
 
 .trip__btn {
@@ -261,4 +254,132 @@ body {
 }
 .trip__slider {
   width: 50%;
+}
+
+/* === HOTEL ======= */
+
+.hotel__title span {
+  margin-left: 120px;
+}
+
+.hotel__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0 99px;
+}
+
+.hotel__text {
+  margin-bottom: 20px;
+}
+.hotel__gallery {
+  margin-top: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px 39px;
+}
+
+/* === PRICE ======= */
+.price {
+  background-image: url(../images/price-bg.png);
+  background-repeat: no-repeat;
+  background-position: 85% 85%;
+}
+
+.price__title {
+  margin-bottom: 100px;
+}
+.price__title span {
+  margin-left: 120px;
+}
+
+.price__inner {
+  display: flex;
+}
+.price__on {
+  max-width: 530px;
+  margin-right: 70px;
+}
+.price__on-title,
+.price__off-title {
+  margin-bottom: 50px;
+  font-family: var(--robotocondensed-regular);
+}
+
+.price__item {
+  margin-bottom: 20px;
+}
+
+/* ===== CONTACTS ======== */
+
+.contacts {
+}
+
+.contacts__inner {
+  display: flex;
+}
+.contacts__content {
+  padding: 100px 108px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contacts__info {
+}
+.contacts__date {
+  color: var(--gold);
+  font-family: var(--balqis);
+  font-size: 96px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  /* 71.875% */
+}
+.contacts__date span {
+  font-family: var(--robotocondensed-light-italic);
+  font-size: 24px;
+  color: var(--black);
+  display: block;
+}
+.contacts__price {
+  color: var(--gold);
+  font-family: var(--balqis);
+  font-size: 96px;
+  font-weight: 400;
+  margin-bottom: 100px;
+}
+.contacts__price span {
+  font-family: var(--robotocondensed-light-italic);
+  font-size: 24px;
+  color: var(--black);
+  display: block;
+}
+.contacts__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contacts__form-title {
+  font-family: var(--robotocondensed-regular);
+  font-size: 24px;
+  margin-bottom: 50px;
+}
+.contacts__form-name {
+  display: block;
+  margin-bottom: 20px;
+  border: 1px solid var(--gold);
+  width: 100%;
+}
+.contacts__form-phone {
+  width: 100%;
+  display: block;
+  margin-bottom: 20px;
+  border: 1px solid var(--gold);
+}
+.contacts__form-btn {
+  padding: 11px 45px;
+  width: 280px;
+  border: 1px solid var(--gold);
+}
+.contacts__img {
 }
