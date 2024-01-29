@@ -283,7 +283,7 @@ body {
 .price {
   background-image: url(../images/price-bg.png);
   background-repeat: no-repeat;
-  background-position: 85% 85%;
+  background-position: center right 20%;
 }
 
 .price__title {
@@ -312,9 +312,6 @@ body {
 
 /* ===== CONTACTS ======== */
 
-.contacts {
-}
-
 .contacts__inner {
   display: flex;
 }
@@ -325,8 +322,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-.contacts__info {
-}
+
 .contacts__date {
   color: var(--gold);
   font-family: var(--balqis);
@@ -340,6 +336,8 @@ body {
   font-size: 24px;
   color: var(--black);
   display: block;
+  margin-left: 135px;
+  margin-top: -25px;
 }
 .contacts__price {
   color: var(--gold);
@@ -347,12 +345,15 @@ body {
   font-size: 96px;
   font-weight: 400;
   margin-bottom: 100px;
+  margin-left: 120px;
 }
 .contacts__price span {
   font-family: var(--robotocondensed-light-italic);
   font-size: 24px;
   color: var(--black);
   display: block;
+  margin-left: 120px;
+  margin-top: -20px;
 }
 .contacts__form {
   display: flex;
@@ -364,22 +365,83 @@ body {
   font-size: 24px;
   margin-bottom: 50px;
 }
-.contacts__form-name {
+.contacts__form-input {
   display: block;
-  margin-bottom: 20px;
   border: 1px solid var(--gold);
   width: 100%;
+  height: 50px;
+  padding: 15px 30px;
+  margin-bottom: 20px;
 }
-.contacts__form-phone {
-  width: 100%;
-  display: block;
-  margin-bottom: 20px;
-  border: 1px solid var(--gold);
+
+.contacts__form-input::placeholder {
+  font-family: var(--robotocondensed-light);
+  font-size: 18px;
+  color: var(--black);
 }
 .contacts__form-btn {
   padding: 11px 45px;
   width: 280px;
   border: 1px solid var(--gold);
+  text-transform: uppercase;
+  background-color: transparent;
+  cursor: pointer;
+  font-family: var(--robotocondensed-light);
+  font-size: 24px;
 }
-.contacts__img {
+
+/* ===== FOOTER ======= */
+
+.footer {
+  background-image: url("../images/footer-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  padding-top: 90px;
+  height: 1180px;
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__contacts {
+  background-image: url("../images/footer-contacts-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 60px;
+  margin: 0 122px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 356px;
+  height: 527px;
+}
+.footer__contacts-title {
+  color: var(--balqis);
+  font-family: var(--balqis);
+  font-size: 86px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 50px;
+}
+.footer__phone {
+  margin-bottom: 20px;
+}
+.footer__email {
+  margin-bottom: 38px;
+}
+.footer__social {
+  display: flex;
+  gap: 0 15px;
+}
+
+.footer__text {
+  font-family: var(--balqis);
+  font-size: 86px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
